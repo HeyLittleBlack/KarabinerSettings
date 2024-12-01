@@ -1,6 +1,62 @@
 {
     "profiles": [
         {
+            "complex_modifications": {
+                "rules": [
+                    {
+                        "description": "通过 ctrl+方向键使光标移动一个单词的距离",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_arrow",
+                                    "modifiers": { "mandatory": ["left_control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "right_arrow",
+                                    "modifiers": { "mandatory": ["left_control"] }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": ["left_option"]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "[单击]home和end对应行首和行尾",
+                        "manipulators": [
+                            {
+                                "from": { "key_code": "home" },
+                                "to": {
+                                    "key_code": "a",
+                                    "modifiers": ["left_control"]
+                                },
+                                "type": "basic"
+                            },
+                            {
+                                "from": { "key_code": "end" },
+                                "to": {
+                                    "key_code": "e",
+                                    "modifiers": ["left_control"]
+                                },
+                                "type": "basic"
+                            }
+                        ]
+                    }
+                ]
+            },
             "devices": [
                 {
                     "fn_function_keys": [
@@ -50,7 +106,7 @@
                         },
                         {
                             "from": { "key_code": "f12" },
-                            "to": [ { "key_code": "f12" }]
+                            "to": [{ "key_code": "f12" }]
                         }
                     ],
                     "identifiers": {
