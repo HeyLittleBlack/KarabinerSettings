@@ -89,6 +89,8 @@
                         ]
                     },
                     {
+=======
+>>>>>>> main
                         "description": "home/end + shift 选中从当前位置到行首或者行尾的文本",
                         "manipulators": [
                             {
