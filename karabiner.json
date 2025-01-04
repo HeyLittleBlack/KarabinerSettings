@@ -300,7 +300,7 @@
                 },
                 {
                     "from": { "key_code": "keypad_5" },
-                    "to": [{ "key_code": "delete_or_backspace" }]
+                    "to": [{ "key_code": "spacebar" }]
                 },
                 {
                     "from": { "key_code": "keypad_6" },
