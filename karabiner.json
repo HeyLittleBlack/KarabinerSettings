@@ -5,6 +5,7 @@
                 "rules": [
                     {
                         "description": "ctrl+s 保存 / ctrl+b 加粗 / ctrl+a 全选 / ctrl+z 撤销 / ctrl+w 关闭",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -325,6 +326,10 @@
                 {
                     "from": { "key_code": "keypad_period" },
                     "to": [{ "key_code": "delete_forward" }]
+                },
+                {
+                    "from": { "key_code": "caps_lock" },
+                    "to": [{ "key_code": "escape" }]
                 }
             ],
             "virtual_hid_keyboard": { "keyboard_type_v2": "ansi" }
