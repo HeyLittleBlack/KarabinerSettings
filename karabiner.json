@@ -91,6 +91,7 @@
                     },
                     {
                         "description": "home/end + shift 选中从当前位置到行首或者行尾的文本",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": {
@@ -196,6 +197,7 @@
                     },
                     {
                         "description": "[单击]home和end对应行首和行尾",
+                        "enabled": false,
                         "manipulators": [
                             {
                                 "from": { "key_code": "home" },
